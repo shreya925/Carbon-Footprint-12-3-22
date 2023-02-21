@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* --------GENERAL STYLES START----------- */
+*::before, *::after{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  overflow-x:hidden;
+  background-color:#A6CDFF ;
+  font-family: 'Bebas Neue', cursive;
+}
+
+::selection{
+  background-color: #A6CDFF;
+  color: #fff;
+}
+
+a{
+  color:#F72485;
+ text-decoration:none; 
+  font-size: 4vw;
+}
+
+ul{
+  list-style: none;
+}
+
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:10;
+
+}
+/* --------GENERAL STYLES END ----------- */
+
+
+/* -------- NAVBAR START ----------- */
+header.scrolled{
+  background-color: #F72485;
+  box-shadow: 0 5px 20px 0.1px rgba(0,0,0,0.1);
+}
+
+nav.container{
+  display:flex;
+  align-items: center;
+  flex-wrap:wrap;
+}
+
+
+header .logo{
+  height: 120px;
+  line-height: 120px;
+}
+
+header.scrolled.logo{
+  height: 80px;
+  line-height: 80px;
+}
+
+.links{
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.links ul{
+  display:flex;
+  align-items: center;
+  width:100%;
+}
+
+.nav-link{
+  position: relative;
+  display: inline-block;
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 2.5vw;
+  letter-spacing: 0.5px;
+  color: #480CA7;
+  font-weight: 500;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.nav-link::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #480CA7;
+  bottom: 0;
+  left: -5px;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.3s;
+  
+}
+
+.nav-link:hover{
+  color: #F72485;
+}
+
+.nav-link:hover:after{
+  width: 100%;
+  opacity: 0.2;
+  
+}
+
+/* -------- NAVBAR END ----------- */
+
+
+
+/* --------title page-------- */
+
+.titleImgDiv{
+  float:left;
+  width:55%;
+  height:100%;
+}
+.titleImg{
+  width:100%;
+  height:100%;
+}
+
+.titleTextDiv{
+  float:right;
+  width:40%;
+  margin-right: 5%;
+ 
+}
+.titleText{
+  color: #480CA7;
+  font-size: 5.5vw;
+  text-align:center;
+  margin-bottom: -5%;
+}
+
+.titleSubText{
+  color:white;
+  font-size:3.5vw;
+  text-align:center;
+}
+
+cta{
+  margin-top:3.5rem;
+  display:flex;
+  align-items: center;
+}
+.btn{
+  display: inline-block;
+  padding: 0.9rem 1.75rem;
+  border-radius: 28px;
+  background-color: #F72485;
+  min-width: 100px;
+  text-align: center;
+  color: #fff;
+  font-size: 2vw;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  margin-left: 15%;
+}
+
+.btn:hover{
+  background-color: #480CA7;
+}
+
+
+
+
+/* ------tile style for quiz-------- */
+
+.quizImg{
+  height: 300px;
+  width:300px;
+}
+.tiles{
+ width: 600px;
+  font-size: 0;
+  margin: 0 auto;
+  padding-bottom: 200px;
+  display:grid;
+}
+.tile{
+  padding-bottom: 40px;
+  display: inline-grid; 
+  
+}  
+.quizbtn{
+  background-color:#480CA7;
+  color: white;
+  font-size: 1.2vw;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.questions{
+  font-size: 3vw;
+  text-align: center;
+  color: white;
+}
+
+/* ----learn more ---- */
+.learnTitle{
+  font-size: 4vw;
+  color:white;
+  text-align: center;
+  
+}
+.carpoolDiv{
+  float:left;
+  width:55%;
+  height:100%;
+}
+.carpoolImg{
+  width:100%;
+  height:100%;
+}
+
+.carpoolExpl{
+  float:right;
+  width:45%;
+  height:100%;
+}
+
+.carpoolTitle{
+  font-size: 4.5vw;
+  color:#F72485; 
+  text-align: center;
+  margin-right: 5%;
+  margin-top: 20%;
+}
+.carpoolSub{
+  font-size: 2.5vw;
+  text-align: center;
+   margin-right: 5%;
+  color:#480CA7;
+}
+
+.showerDiv{
+  float:right;
+  width:55%;
+  height:100%;
+}
+
+.showerImg{
+  width:100%;
+  height:100%;
+}
+
+.showerExpl{
+  float:left;
+  width:45%;
+  height:100%;
+}
+
+.showerTitle{
+  font-size: 4.5vw;
+  color:#F72485; 
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 20%;
+}
+.showerSub{
+  font-size: 2.5vw;
+  text-align: center;
+   margin-left: 5%;
+  color:#480CA7;
+}
+
+.recycleDiv{
+  float:left;
+  width:55%;
+  height:100%;
+}
+
+.recycleImg{
+  width:100%;
+  height:100%;
+}
+
+.recycleExpl{
+  float:right;
+  width:45%;
+  height:100%;
+}
+
+.recycleTitle{
+  font-size:4.5vw;
+  color:#F72485; 
+  text-align: center;
+  margin-right: 5%;
+  margin-top: 20%;
+}
+.recycleSub{
+  font-size: 2.5vw;
+  text-align: center;
+   margin-right: 5%;
+  color:#480CA7;
+}
+.foodDiv{
+  float:right;
+  width:55%;
+  height:100%;
+}
+
+.foodImg{
+  width:100%;
+  height:100%;
+}
+
+.foodExpl{
+  float:left;
+  width:45%;
+  height:100%;
+}
+
+.foodTitle{
+  font-size: 4.5vw;
+  color:#F72485; 
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 20%;
+}
+.foodSub{
+  font-size: 2.5vw;
+  text-align: center;
+   margin-left: 5%;
+  color:#480CA7;
+}
+
+.plantDiv{
+  float:left;
+  width:55%;
+  height:100%;
+}
+
+.plantImg{
+  width:100%;
+  height:100%;
+}
+
+.plantExpl{
+  float:right;
+  width:45%;
+  height:100%;
+}
+
+.plantTitle{
+  font-size:4.5vw;
+  color:#F72485; 
+  text-align: center;
+  margin-right: 5%;
+  margin-top: 20%;
+}
+.plantSub{
+  font-size:2.5vw;
+  text-align: center;
+   margin-right: 5%;
+  color:#480CA7;
+}
+.result {
+  font-size: 50px;
+  color: darkred;
+}
